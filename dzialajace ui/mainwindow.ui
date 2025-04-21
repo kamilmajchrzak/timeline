@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt Voiceover Editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainVerticalLayout">
+    <item>
+     <widget class="QGroupBox" name="videoWindow">
+      <property name="title">
+       <string>Okno wideo</string>
+      </property>
+      <layout class="QVBoxLayout" name="layoutVideo">
+       <item>
+        <widget class="QLabel" name="labelVideoPlaceholder">
+         <property name="text">
+          <string>Okno wideo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="movieTrack">
+      <property name="title">
+       <string>Ścieżka filmu</string>
+      </property>
+      <layout class="QVBoxLayout" name="layoutMovie">
+       <item><widget class="QLabel" name="labelMovieTrack"><property name="text"><string>Ścieżka filmu</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonLoadMarkers"><property name="text"><string>Load Markers</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonApplyPythonMovie"><property name="text"><string>Apply Python</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonApplyVSTMovie"><property name="text"><string>Apply VST</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonExportMovie"><property name="text"><string>Export</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="voiceTrack">
+      <property name="title">
+       <string>Ścieżka lektora</string>
+      </property>
+      <layout class="QVBoxLayout" name="layoutVoice">
+       <item><widget class="QLabel" name="labelVoiceTrack"><property name="text"><string>Ścieżka lektora</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonRecord"><property name="text"><string>Record</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonApplyPythonVoice"><property name="text"><string>Apply Python</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonApplyVSTVoice"><property name="text"><string>Apply VST</string></property></widget></item>
+       <item><widget class="QPushButton" name="buttonExportVoice"><property name="text"><string>Export</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar">
+   <widget class="QMenu" name="menuPlik">
+    <property name="title"><string>Plik</string></property>
+    <addaction name="actionOpenVideo"/>
+    <addaction name="actionLoadSubtitles"/>
+   </widget>
+   <widget class="QMenu" name="menuEdycja">
+    <property name="title"><string>Edycja</string></property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuEksport">
+    <property name="title"><string>Eksport</string></property>
+    <addaction name="actionSaveAs"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuEdycja"/>
+   <addaction name="menuEksport"/>
+  </widget>
+
+  <action name="actionOpenVideo">
+   <property name="text"><string>Otwórz video</string></property>
+  </action>
+  <action name="actionLoadSubtitles">
+   <property name="text"><string>Wczytaj napisy</string></property>
+  </action>
+  <action name="actionSettings">
+   <property name="text"><string>Ustawienia</string></property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="text"><string>Zapisz jako...</string></property>
+  </action>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

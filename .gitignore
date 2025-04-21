@@ -1,0 +1,26 @@
+# Qt build
+build*/
+*.pro.user*
+*.autosave
+*.qrc.dep*
+*.qrc.cpp
+*.moc
+*.moc/*
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# OS/macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Autogen
+*_autogen/
